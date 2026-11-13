@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    min-height: 350px;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 300px;
+}
+
+.profile img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div {
+    display: flex;
+    gap: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
